@@ -381,7 +381,7 @@ Function Set-CustWMIClass {
         $NewInstance = New-CimInstance -Namespace $NameSpace -ClassName $ClassName -Arguments $ValueList -ErrorAction SilentlyContinue
       }
       Else {
-        Throw "No registry entries found. Exiting." 
+        Throw "No registry entries found. Exiting."
       }
       If($NewInstance) {
         Return $NewInstance
